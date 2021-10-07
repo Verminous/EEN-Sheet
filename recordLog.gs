@@ -72,8 +72,8 @@ function getSheetWithName(name) {
 // GROUPS FUNCTION
 // by Yuri Khristich
 // Will group rows by DAY, MONTH and YEAR.
-// My tweaks: 
-// Will only group last day, month and year when over at 24h00m.
+// Verminous' tweaks: 
+// Will only group last day, month and year when day is over at 24h00m.
 // Will automatically organize with Year number and month names after these are over at 24h00m.
 
 let rowBlock = sheet.getRange(sheet.getLastRow() - 1, 1).getValue();   // Get value for second last row
@@ -82,8 +82,8 @@ let firstRowOfBlock;
 
 // Used for getting the arrays with blocks of rows of `d`+ `m`+ `y`
 let range = sheet.getRange("A4:A");
-console.log(range);
 let startRow = range.getRow();
+console.log(startRow);
 
 // GROUP ROWS BY YEARS
 function group_by_years() {
@@ -133,16 +133,21 @@ function group_by_months() {
 // GROUP ROWS BY DAYS
 function group_by_days() {
     // Used to get block of rows for last day "dd", month "MM" and year "YYYY"
-    let [yrs, mths, dys] = Utilities.formatDate(rowBlock, timeZone, "yyyy,MM,dd").split(",");
+    let [yrs, mths, dys] = Utilities.formatDate(rowBlock, timeZone, "yyyy,MM,d").split(",");
+    // console.log("yrs,mths,dys -> ",yrs,mths,dys);
     let cells = range.getValues().map((x, i) => x.concat(i + startRow)).filter(x => {   // filter "dd"
         let date = new Date(x[0]);
         let year = date.getFullYear();
         let month = ("0" + (date.getMonth() + 1)).slice(-2);
         let day = date.getDate();
+        // console.log(day);
         return (`${yrs}` === `${year}` && `${mths}` === `${month}` && `${dys}` === `${day}`);
     }).map(x => x[1]);
+    // console.log("yrs -> ", yrs, " mths -> ", mths, " dys -> ",dys);
     // Used to get index of block of rows
     firstRowOfBlock = cells[0];
+    // console.log("groupRows() -> group_by_days() ->", "cells:", cells);
+    // console.log("groupRows() -> group_by_days() ->", "cells[0]:", cells[0]);
     // Check for errors and correct these
     correctLogErrors();
     // Grouping Function
@@ -208,18 +213,26 @@ function checkRows() {
     let yearLastRow = Utilities.formatDate(dateLast, timeZone, "yyyy");
     let yearSecondLastRow = Utilities.formatDate(dateSecondLast, timeZone, "yyyy");
 
+    console.log(daySecondLastRow,dayLastRow);
+
     if (yearLastRow > yearSecondLastRow) {
+        console.log("checkRows():", yearSecondLastRow + ' ->', yearLastRow + ' -', "Year went up. So day and month went up too, though they went back to 1. Y + M + d Grouping executed");
         group_by_years();
         group_by_months();
         group_by_days();
     } else {
+        console.log("checkRows():", yearSecondLastRow + ' ->', yearLastRow + ' -', "Year didn't go up.");
         if (monthLastRow > monthSecondLastRow) {
+            console.log("checkRows():", monthSecondLastRow + ' ->', monthLastRow + ' -', "Month went up. So day went up too, even though it went back to 1. But year didn't. M + d Grouping executed");
             group_by_months();
             group_by_days();
         } else {
+            console.log("checkRows():", monthSecondLastRow + ' ->', monthLastRow + ' -', "Month didn't go up.");
             if (dayLastRow > daySecondLastRow) {
+                console.log("checkRows():", daySecondLastRow + ' ->', dayLastRow + ' -', "Day went up. So month and year didn't. d Grouping executed");
                 group_by_days();
             } else {
+                console.log("checkRows():", daySecondLastRow + ' ->', dayLastRow + ' -', "Day didn't go up.");
             }
         }
     }
@@ -330,13 +343,13 @@ function deleteTriggerError() {
     // console.log(timerDifference);
     switch (timerDifLimitRange) {
         case '1 0  M I N U T E S':
-            timerDifLimitValue = timerDifLimitRange.replace("1 0  M I N U T E S", minuteConverter('9:45'));
+            timerDifLimitValue = timerDifLimitRange.replace("1 0  M I N U T E S", minuteConverter('9:30'));
             break
         case '5  M I N U T E S':
-            timerDifLimitValue = timerDifLimitRange.replace("5  M I N U T E S", minuteConverter('4:45'));
+            timerDifLimitValue = timerDifLimitRange.replace("5  M I N U T E S", minuteConverter('4:30'));
             break
         case '1  M I N U T E':
-            timerDifLimitValue = timerDifLimitRange.replace("1  M I N U T E", minuteConverter('0:45'));
+            timerDifLimitValue = timerDifLimitRange.replace("1  M I N U T E", minuteConverter('0:40'));
             break
         default:
     }

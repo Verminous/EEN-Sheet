@@ -2,7 +2,6 @@
 // MAIN FUNCTION TO BE EXECUTED BY TIME TRIGGER
 // by Verminous
 // Needs to be configured in Triggers. It will only work well if set for 1, 5 or 10 mins. I prefer 10 min.
-// Or
 // 1 - Execute refreshSupply(): will refresh Blockchain data from API just for TFUEL Supply.
 // 2 - Execute timerPlus(): updates timer for remaining Blockchain data.
 // 3 - Execute alertRewards(): check for change in rewards/earnings and if so notify user.

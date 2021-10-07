@@ -35,7 +35,7 @@ function alertRewards() {
         // Check Reward alert Switch state
         if (alertRewardState !== "O F F") {
             // If present balance is greater than last logged one, send Alert email
-            if (presentTfuel !== lastTfuel) {
+            if (presentTfuel > lastTfuel || presentTfuel < lastTfuel) {
                 let message = 'Balance update:' + '\n' + Math.round((presentTfuel - lastTfuel) * 100) / 100 + '\n' + '\n' + 'Total balance:' + '\n' + presentTfuel;
                 let subject = 'ALERT';
                 MailApp.sendEmail(emailAddress, subject, message);
@@ -48,7 +48,7 @@ function alertRewards() {
         // Check EEN alert Switch state
         if (alertEENState !== "O F F") {
             // If present EEN wallet balance is greater than last logged one, send Alert email
-            if (presentEEN !== lastEEN) {
+            if (presentEEN > lastEEN || presentEEN < lastEEN) {
                 let message = 'EEN wallet balance update:' + '\n' + Math.round((presentEEN - lastEEN) * 100) / 100 + '\n' + '\n' + 'Total balance:' + '\n' + presentEEN;
                 let subject = 'ALERT';
                 MailApp.sendEmail(emailAddress, subject, message);
