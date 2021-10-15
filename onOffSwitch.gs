@@ -6,7 +6,7 @@
 
 function onOffSwitch() {
 
-    let onOffSwitchBtRange = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("EEN_SHEET").getRange("A1");
+    let onOffSwitchBtRange = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("EEN_SHEET").getRange("A126");
     let onOffSwitchBt = onOffSwitchBtRange.getValue();
 
     if (onOffSwitchBt) {
