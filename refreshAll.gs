@@ -44,7 +44,7 @@ function timerPlus() {
     yesCount1.setValue(yesAdd1 + 1);
 
     Utilities.sleep(500);
-    let timeTriggerRange = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("EEN_SHEET").getRange("R1");
+    let timeTriggerRange = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("EEN_SHEET").getRange("Y126");
     let timeTrigger = timeTriggerRange.getValue();
     let limit = timeTrigger;
     let countRangeStateRange = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("LOG").getRange("U2");
