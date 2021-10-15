@@ -25,7 +25,7 @@ If you don't agree please close this window now, and delete the EEN Sheet from y
 COPY THE GOOGLE SHEETS FILE: 
 First thing we need to do is to copy the Google Sheet File into your Google Drive or Google Docs. For this press the link below which will give you access to the EEN Sheet beta available from my Google Drive:
 
-https://docs.google.com/spreadsheets/d/1DS8vd7LcP8OO9NDMIfQvAUqfFSXBXkre1AjCSlmFyMY/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/14Fzke2wit52-BElMEWSqunsRbL2hy_jFoelgYfSGhAA/edit?usp=sharing
 
 Now go to:
 
