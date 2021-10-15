@@ -47,7 +47,7 @@ First thing you need to do is authorize the EEN Sheet beta to access your Google
 TOOLS -> SCRIPT EDITOR
 
 After EEN Sheet receives authorization to access your Google account you may delete the screen vector art/image, and then press the ON/OFF switch at the top of the sheet.
- 
+
 2 - CONTROL PANEL: 
 On the top right you will find the Control Panel. Here you will be able to enter your main wallet address, your EEN wallet address, as well as your email address. This way you will be able to keep track of your TFUEL staking rewards as well as your EEN computing earnings and also receive email alerts when those rewards and earnings are received. Copy paste your main wallet public address from where your TFUEL is being staked into the U3 cell group. Then copy paste your EEN wallet public address where your computing earnings (F@H, video encoding etc) are sent to, into the U5 cell group. Finally, type your email address, where, if you so wish, you'll receive an email notification whenever rewards and earnings are received, into the U6 cell group.
 
