@@ -62,50 +62,6 @@ function resetCell() {
     yesCount0.setValue(0);
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-// SET CURRECY FORMAT TO "EEN_SHEET" CHARTS
-// by Verminous
-
-//
-//let sheetZ = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("EEN_SHEET");
-//let rangeZ = sheetZ.getRange("T13");
-//let currencyFormat = rangeZ.getValue();
-//console.log(currencyFormat);
-//
-//function setCurrencies () {
-//if (currencyFormat === "E U R") {
-//sheetZ.getRange(22, 6, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(22, 12, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(22, 17, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(44, 6, 2,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(44, 4, 2,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(57, 4, 2,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(67, 6, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(67, 12, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(67, 17, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(67, 22, 21,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(67, 23, 21,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(93, 6, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//sheetZ.getRange(111, 6, 13,1).setNumberFormat("[$€ ]#,##0.00");
-//}
-//
-//if (currencyFormat === "U S D") {
-//sheetZ.getRange(22, 6, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(22, 12, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(22, 17, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(44, 6, 2,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(44, 4, 2,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(57, 4, 2,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(67, 6, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(67, 12, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(67, 17, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(67, 22, 21,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(67, 23, 21,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(93, 6, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//sheetZ.getRange(111, 6, 13,1).setNumberFormat("[$$ ]#,##0.00");
-//}
-//}
-
 //////////////////////////////////////////////////////////////////////////
 // MY TIMER
 // by Verminous
