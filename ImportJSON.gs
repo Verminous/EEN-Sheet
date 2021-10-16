@@ -351,7 +351,7 @@ function parseJSONObject_(object, query, options, includeFunc, transformFunc) {
  * array or scalar value.
  *
  * If the value is an object, it's properties are iterated through and passed back into this function with the name of each 
- * property extending the path. For instance, if the object contains the property "entry" and the path passed in was "/feed",
+ * property extending the path. For instance, if the object contains the property "entry" and the path passed in was "/feed", 
  * this function is called with the value of the entry property and the path "/feed/entry".
  *
  * If the value is an array containing other arrays or objects, each element in the array is passed into this function with 
