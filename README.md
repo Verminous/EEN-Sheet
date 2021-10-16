@@ -1,4 +1,4 @@
-Welcome to EEN Sheet beta!
+Welcome to EEN Sheet beta! 
 
 In order for this tool to work properly you will need to do some configuration first. 
 But before we go any further, please be mindful of the following terms to which I will assume you agree with if you start using this sheet. 
