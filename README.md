@@ -58,7 +58,7 @@ After EEN Sheet beta receives authorization to access your Google account you ma
 In Google Sheets go to:
 
 FILE -> SPREADSHEET SETTINGS
- 
+
 A windows will popup where you can configure your Locale and Timezone. 
 Locale refers to where you are located or where are you from. Actually you don't really need to insert your real location or nationality. It's more about which type of formatting for dates, formula syntax etc. you feel more comfortable with. I'm not from the UK nor am I living there but I use that Locale because it uses a type of formatting which I am familiar with, so that's the one I use. Regarding the Timezone this one is important to set up properly otherwise it might affect the dates being recorded on the LOG spreadsheet as well as the automatic grouping function for rows on that same spreadsheet which will cause this sheet not to work properly. So be sure to insert your real timezone or one you know for sure is compatible with yours. 
 
@@ -71,7 +71,7 @@ TOOLS -> SCRIPT EDITOR
 On the Script editor tab go to:
 
 FILE -> PROJECT PROPERTIES
- 
+
 A new window will popup. On the bottom of this window please insert the same timezone you chose on step 3.1. If you can't find this option it's probably because you are using the new Script editor. ATM we still can use the Legacy editor where this option is available. To access the Legacy editor, on the new Script editor top right click on "Use legacy editor". Now you'll find the option "Project properties" available.  
 
 4 - CONTROL PANEL: 
@@ -81,7 +81,7 @@ On the top right you will find the Control Panel. Here you will be able to enter
 4.1 - EMAIL ALERTS: 
 
 As explained just above you will be able to receive, if you so wish, alerts whenever you receive a staking TFUEL reward, or EEN TFUEL computing earnings. If you don't want to receive any email alerts please don't enter your email address and leave both check boxes unchecked. If you do want to receive one of the alerts, or both, be sure to enter your email address into the U6 cell group, and leave both check boxes, or just one of them, checked. If you are a TFUEL whale I advise you to opt out of the staking rewards ALERTS function as you would receive too many emails. 
- 
+
 4.2 - TIME TRIGGER: 
 
 This sheet will need to import data from the THETA Blockchain at a regular time period in order for it to build the line charts and display the balances, rewards and percentages. In order for this to happen you will need to configure a time trigger which executes a function, built into this sheets code, every time the time trigger executes. This function will refresh and record certain THETA blockchain information on the LOG spreadsheet, such as your Wallet balance, rewards received, TFUEL supply, total TFUEL staked, prices and so on. 
@@ -97,7 +97,7 @@ https://script.google.com/home
 
 Then you will be able to see this sheet's project name: EEN_sheet_beta. 
 To the right press the 3 dots and choose TRIGGERS. 
- 
+
 Now on the bottom right, press ADD TRIGGER. You will be presented with a dialogue box where you can configure your Trigger:
 
 	1.	First you will need to choose the function EEN_Sheet_Trigger. 
@@ -118,7 +118,7 @@ This is important as it will affect the calculations executed on the LOG spreads
 Your EEN Sheet beta is now configured. But you will see no data on the main spreadsheet yet. This is because the sheet needs at least 2 data points, or rows with values on the LOG spreadsheet for it to start building the line charts and display the values, balances and percentages. 
 
 I advise you, before you reach any conclusion regarding the effectiveness of this sheet, to let the sheet work for a few hours, or better 24 hours, so that the data presented on the main spreadsheet EEN_SHEET starts making sense.
- 
+
 6 - CHARTS TIME PERIOD: 
 
 After about 24h to 48h of data being recorded on the LOG spreadsheet, you will be able to start using this data validation menu on the Control Panel named CHARTS, not before. Basically it's used to zoom in and out of the line charts. In order for the other time periods to work: 1 week, 1 month etc. you will need to wait for 1 week and 1 month of data, or more, respectively.
@@ -136,6 +136,5 @@ PLEASE SUPPORT ME:
 If you find the EEN sheet beta to be useful to you, please consider making a TFUEL donation. Receiving your support would help me to get the motivation and time necessary to continue learning how to code, to improve this sheet, and eventually coming up with other tools for the THETA Community in the future like for example a Guardian Node Sheet.
 
 My TFUEL Wallet public address is the following: 
-
 0xa953867aA815B9B09cFe0349c9FA8aea0F738220
 
