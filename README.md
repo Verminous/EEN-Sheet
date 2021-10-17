@@ -32,7 +32,7 @@ Below you will find all the steps necessary in order to get this sheet working. 
 
 First thing we need to do is to copy the Google Sheets File into your Google Drive / Google Docs. For this press the link below which will give you access to the EEN Sheet beta available from my Google Drive:
 
-https://docs.google.com/spreadsheets/d/1DS8vd7LcP8OO9NDMIfQvAUqfFSXBXkre1AjCSlmFyMY/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1yU9qNmp7ITmpy3gNo6k-xOD1UFv5xZDmZChtx0HoBmI/edit?usp=sharing
 
 Now go to:
 
