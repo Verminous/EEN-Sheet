@@ -135,6 +135,7 @@ PLEASE SUPPORT ME:
 
 If you find the EEN sheet beta to be useful to you, please consider making a TFUEL donation. Receiving your support would help me to get the motivation and time necessary to continue learning how to code, to improve this sheet, and eventually coming up with other tools for the THETA Community in the future like for example a Guardian Node Sheet.
 
-My TFUEL Wallet public address is the following: 
+My TFUEL Wallet public address is the following:
+
 0xa953867aA815B9B09cFe0349c9FA8aea0F738220
 
