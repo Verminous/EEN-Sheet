@@ -41,7 +41,7 @@ function alertRewards() {
                 MailApp.sendEmail(emailAddress, subject, message);
             }
         }
-        //        console.log(switchState,alertRewardState);
+        //       console.log(switchState,alertRewardState);
         //        console.log(presentTfuel,lastTfuel);
         //        console.log(emailAddress);
 
